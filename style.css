@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+h1{
+    font-size: 3.6rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+h4{
+    font-weight: normal;
+}
+
+.container{
+    max-width: 1440px;
+    margin:auto;
+}
+
+.hero-wrapper{
+    height:804px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:url(hero_background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text{
+    max-width: 780px;
+}
+
+.hero-text h1{
+    margin-bottom: 32px;
+}
+
+.hero-text p{
+    margin-bottom: 72px;
+}
+
+.hero-text button{
+    background-color: white;
+    border-radius: 16px;
+    padding:10px 20px;
+    border:none;
+    font-weight: bold;
+}
+
+.s2-background-color{
+    margin-top:0px; /*WHY doesn't this work? White line between s1 and s2*/
+    margin:0px;
+    background-color:#EAF3F5;
+}
+
+.s2-stats{
+    list-style-type: none;
+    display:flex;
+    max-width: 780px;
+    justify-content: space-evenly; /*Why is it still so bunched up? Do i need to individually change margin of each list item*/
+    margin-left:220px;
+    margin-bottom: 48px;
+
+}
+
+.s2-bubbles{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 60px;
+}
+
+.s2-bubbles li{
+    border: 1px solid;
+    border-radius:24px;
+    padding: 10px 10px;
+    max-width: 160px;
+}
+
+.text-wrapper{
+    margin-top:80px;
+    margin-bottom:80px;
+    margin-left:360px;
+    max-width:720px;
+}
+
+.s3-card-wrapper{
+    display: flex;
+    flex-direction: row;
+    max-width:1200px;
+    margin:auto;
+    justify-content: space-evenly; /*WHY ALl SO BUNCHED UP*/
+    height:160px;
+}
+
+.s3-card{
+    width:360px;
+    border: none;
+    border-radius:12px;
+    position: relative;
+}
+
+.s3-card h4, .s3-card p{
+    position: absolute;
+    margin-left: 10px;
+}
+
+.s3-card h4{
+    font-weight: bold;
+    bottom:40px;
+}
+
+.s3-card p{
+    bottom:10px;
+}
+
+
+#s3-card-1{
+    background-color: #FFF2E3;
+}
+
+#s3-card-2{
+    background-color: #EAF3F5;
+}
+
+#s3-card-3{
+    background-color: #F1F4EB;
+}
+
+.s3-wrapper h2{
+    margin-top: 80px;
+}
+
+.s4-card-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin:auto;
+    color:#ffffff;
+}
+
+.s4-card{
+    position:relative
+}
+
+.s4-card h4 {
+    font-weight: bold;
+    position:absolute;
+    bottom: 80px;
+    padding-left:10px;
+}
+
+.s4-card p{
+    position:absolute;
+    bottom: 20px;
+    padding-left: 10px;
+}
+
+.s4-card a{
+    position:absolute;
+    bottom: 10px;
+    padding-left: 10px;
+}
+
+#s4-card-1{
+    height:240px;
+    width:240px;
+    border-radius: 16px;
+    background-image:url(s4_card_1_img.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+#s4-card-2{
+    height:240px;
+    width:240px;
+    border-radius: 16px;
+    background-image:url(s4_card_2_img.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+#s4-card-3{
+    height:240px;
+    width:240px;
+    border-radius: 16px;
+    background-image:url(s4_card_3_img.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.s5-background-color{
+   background-color: #F1F4EB; 
+}
+
+.s5-list{
+    list-style-type:none;
+    display: flex;
+    margin-left:360px; /*why doesn't this align with the text wrapper h2 p?*/
+}
+
+.s5-list li{
+    border:1px;
+    border-style:solid;
+    border-radius:16px;
+    padding:10px;
+    margin-right:10px;
+}
+
+#fixed-contact{
+    height:40px;
+    background-color:#F7F6F4;
+    list-style-type: none;
+    display: flex;
+    align-items:center;
+}
+
+#fixed-contact li{
+    margin-right:28px;
+}
+
+@media only screen and (max-width:600px){
+    .hero-wrapper, .s2-stats, .s2-bubbles, .s3-card-wrapper, .s4-card-wrapper{
+        flex-direction: column;
+    }
+}
+
+/* Link for reference: https://cdn.dribbble.com/userupload/10628196/file/original-4eabfde56e1a57bf4ae7cda00568f78c.png?resize=2048x5329&vertical=center */
+
